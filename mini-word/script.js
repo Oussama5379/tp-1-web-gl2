@@ -7,3 +7,6 @@ const value = select.options[select.selectedIndex].value;
 colorInput.addEventListener("input", (e) => {
 	p.style.color = e.target.value;
 });
+numberInput.addEventListener("change", (e) => {
+	p.style.fontSize = e.target.value + "px";
+});
