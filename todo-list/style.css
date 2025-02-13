@@ -1,11 +1,31 @@
 body {
 	display: flex;
+	height: 100vh;
+	background-color: peachpuff;
 }
 .todo {
 	width: 40%;
 	padding: 100px;
+	border: 2px solid brown;
+	text-align: center;
 }
 .inputs {
 	width: 40%;
 	padding: 100px;
+	border: 2px solid brown;
+	text-align: center;
+}
+ul {
+	list-style-type: none;
+}
+li {
+	padding: 5px;
+	background-color: plum;
+	border: 1px solid indigo;
+	border-radius: 30px;
+	margin: 8px;
+}
+button {
+	background-color: #e3f4ff;
+	border-radius: 30px;
 }
