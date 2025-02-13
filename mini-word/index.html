@@ -4,18 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Mini word</title>
+		<script src="script.js" defer></script>
 	</head>
-	<body>
-		<p class="display">Test</p>
-		<div class="inputs">
-			<input type="color" class="color" />
-			<input type="number" class="number" />
-			<select>
-				<option value="" class="option1">Arial</option>
-				<option value="" class="option2">Times New Roman</option>
-				<option value="" class="option3">Georgia</option>
-				<option value="" class="option4">Courier New</option>
-			</select>
-		</div>
-	</body>
+	<p class="display">Test</p>
+	<input type="color" class="color" id="color" />
+	<input type="number" class="number" id="number" />
+	<select id="fonts">
+		<option value="Arial" class="option1">Arial</option>
+		<option value="Times New Roman" class="option2">Times New Roman</option>
+		<option value="Georgia" class="option3">Georgia</option>
+		<option value="Courier New" class="option4">Courier New</option>
+	</select>
 </html>
