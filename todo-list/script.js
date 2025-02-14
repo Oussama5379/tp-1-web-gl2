@@ -1,10 +1,17 @@
 const nameInput = document.querySelector("#name");
 const contentInput = document.querySelector("#content");
-const button = document.querySelector("button");
+const inputButton = document.querySelector(".input-button");
 const list = document.querySelector(".list");
 let option;
-button.addEventListener("click", () => {
+let deleteButton;
+inputButton.addEventListener("click", () => {
 	option = document.createElement("li");
-	option.textContent = nameInput.value + " : " + contentInput.value;
+	deleteButton = document.createElement("button");
+	deleteButton.innerHTML = '<i class="fa fa-trash"></i>';
+	option.innerHTML = nameInput.value + " : " + contentInput.value + " ";
 	list.appendChild(option);
+	option.appendChild(deleteButton);
+	deleteButton.addEventListener("click", (e) => {
+		e.target.parentNode.parentNode.remove();
+	});
 });
